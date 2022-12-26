@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.maincontainer {
+  width: 200px;
+  margin: 0 auto;
+  margin-left: 20px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#id,
+#pw {
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: 0px;
+  background: #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 10px 40px;
+  border-radius: 6px;
+  transition: .15s;
+  margin: 10px 0 0;
+}
+
+button:hover {
+  color: white;
+  background-color: #333;
+}
+
+#id>p,
+#pw>p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 200px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 6px;
+}
