@@ -3,6 +3,7 @@
 2022-12-26 ~ 2022-12-30 까지 Web Frontend 강의 backup
 
 # Client(클라이언트) Request(요청) => Server(서버)
+=================================================
 Server(서버) Response(응답) => Client(클라이언트)
 
 문서의 구조, 정보위계가 명확하게 보이는 아다운 코드를 작성하자. => semantic markup
