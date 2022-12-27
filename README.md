@@ -225,6 +225,6 @@ width = 부모 content-box의 100%
 ```
 ```css
 @media screen and (min-width:768px) {
-  내용
+  내용입력
 }
 ```
