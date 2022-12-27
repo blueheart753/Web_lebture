@@ -50,7 +50,7 @@
 > ol (ordered list)  /  ul(unordered list)
 >>ol, ul의 자식 요소는 무조건 li로 와야 합니다. 
 
-``` html
+```html
 <q> </q>
 ```
 
@@ -165,3 +165,62 @@ width = 부모 content-box의 100%
   clear: left:
 }
 ```
+
+### position
+- 요소를 원하는 위치에 자유롭게 이동할 수 있도록 사용
+- static, relative, absolute, fixed, sticky
+>(sticky의 경우 지원브라어저가 적다.)
+
+#### Postion-static
+- 모든 요소의 기본 요소는 static
+
+#### Position-relative
+>- 자기가 있던 요소를 기준으로 이동
+>- float와 달리, 현재 위치를 잘 알고 있으며 
+
+#### Position-absolute
+
+- 붕 떠서 찾을 길 없는 자식요쇼
+- 블록으로 신분상승
+- 자신이 원하는 요소를 기준으로 position을 변경 가능
+- position:absolute는 static이 아닌 것들을 기준으로 움직인다
+
+#### Position-fixed
+- absolute와 동일한 현상이 발생
+- fixed <--> absulte 차이점
+> fixed 기준점 : viewport
+
+#### Position-z-index
+- 요소가 붕 떠 있을때, 해당 요소의 수직 레벨이 생성됩니다.
+- 붕 뜬 요소들을 겹치고 싶을 때, z-index값을 사용합니다.
+
+#### Flexbox
+- 정렬의 끝판왕! float, position 대신 flexbox 쓰시면 된다.
+##### 사용방법
+> 1. flexbox 쓰겠다고 선언
+> 2. 가로 정렬 / 세로 정렬 선택
+> 3. 무조건 한 줄 안에 다 정렬할지 / 여러 줄을 사용할지
+> 4. 1 ~ 3번 과정을 이용해서 flexbox 파티에 이용
+
+#### 가로 정렬 / 세로 정렬 선택
+- flex-direction : row | column; 
+> (row-reverse, column-reverse)
+- flex를 사용하게 되면 보이지 않는 두 개의 축(Axis)가 생성된다.
+>가로 방향으로 정렬하면 가로 방향이 기본 축, 세로방향으로 정렬하면 세로 방향이 기본 축이 되며, 기본적으로는 가로 방향 정렬이다.
+
+#### 무조건 한 줄 안에 다 정렬할지
+- flex-wrap : nowrap 요소 사용
+> 감싸지(wrap) 않고 자식의 사이즈를 줄여서라더 한줄로 정리 하는 옵션
+- align-items : flex-start;
+- flex-wrap : wrap인 경우, 축이 2개가 생겨서 정렬이 예상과 다르게 되는 경우가 발생함
+
+### Media Query 
+- 반응형 웹을 만들기 위해 필수적인 요소!
+- 접속한 브라우저에게 띠 밎게 알아서 보이도록 합니다.
+
+#### 필수 요소
+- viewport meta (HTML)
+``` html
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
