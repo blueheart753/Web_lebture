@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+  float: left;
+  margin: 0 16px;
+  padding: 20px 0; 
+}
+
+ul::after {
+  content: '';
+  border-bottom: 1px solid #dfdfdf;
+  display: block;
+  clear: both;
+  margin:20px 0;
+}
+
+li:nth-child(2)>a {
+  font-weight: 500;
+  color:rgba(0, 183, 255, 0.638);
+  border-bottom: 2px solid rgba(0, 183, 255, 0.638);
+}
+
+li:hover a {
+  font-weight: 500;
+  color:rgba(0, 183, 255, 0.638);
+  border-bottom: 2px solid rgba(0, 183, 255, 0.638);
+}

@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  color: #292929;
+}
+
+.parent {
+  width: 600px;
+  margin: 0 auto;
+  background: #efefef;
+}
+
+.parent::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  float: left;
+}
+
+.child::before {
+  content: 'Color';
+}
+
+.red {
+  background: rgba(255, 0, 0, 0.575);
+}
+
+.yellow {
+  background: rgba(255, 255, 0, 0.592);
+}
+
+.blue {
+  background: rgba(0, 0, 255, 0.542);
+}
