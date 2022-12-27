@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 200px;
+  margin: 0 auto;
+  background: #efefef;
+  position: relative;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.red {
+  background: rgba(255, 0, 0, 0.575);
+  position: absolute;
+}
+
+.yellow {
+  background: rgba(255, 255, 0, 0.592);
+}
+
+.blue {
+  background: rgba(0, 0, 255, 0.542);
+}
