@@ -223,4 +223,8 @@ width = 부모 content-box의 100%
 ``` html
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
-
+```css
+@media screen and (min-width:768px) {
+  내용
+}
+```
