@@ -1,28 +1,29 @@
-# web_rect
+# 2022-12-26 ~ 2022-12-30 까지 Web Frontend 강의 backup
 
-## 2022-12-26 ~ 2022-12-30 까지 Web Frontend 강의 backup
+## HTML (Hyper Text Markup Language)
 
-### Client(클라이언트) Request(요청) => Server(서버)
+#### Client(클라이언트) Request(요청) => Server(서버)
 
 - Server(서버) Response(응답) => Client(클라이언트)
 
-- 문서의 구조, 정보위계가 명확하게 보이는 아다운 코드를 작성하자. => semantic markup
+- 문서의 구조, 정보위계가 명확하게 보이는 아다운 코드를 작성하자. =>
+semantic markup
 - 검색 엔진 최적화
 
 - 태그 : HTML에서는 웹 문서에 정보를 정의해주는 방식
 
-### label 태그를 선택 했을 때 input 태그가 선택되는 것: for키워드
+- Label 태그를 선택 했을 때 input 태그가 선택되는 것: for키워드
 
 ### 속성(attribute)
 - 추가적인 정보를 제공한다.
 
-#### em : 특정 문맥 강조 
-#### strong : 중요, 긴급, 심각성을 알릴 때 사용 
+- em : 특정 문맥 강조 
+- strong : 중요, 긴급, 심각성을 알릴 때 사용 
 
 ```html
 <a href = "#"> 링크 </a>
 ```
-- href? 
+- href 란?
 - Hypertext REFerence 
 - href에 전달 가능한 값들 
 
@@ -51,17 +52,14 @@
 >>ol, ul의 자식 요소는 무조건 li로 와야 합니다. 
 
 ```html
-<q> </q>
+<q> 일부분 인용 </q>
 ```
 
 - form : 사용자로부터 input을 받기 위한 태그
 
 ```html
-<form action = "" method = ""> </form>
+<form action = ""API주소" (서버쪽:url)" method = ""GET" | "POST""> </form>
 ```
-
-- action : "API주소" (서버쪽:url)
-- method : 
 
 > input : 입력창, 인풋 필드, type 값 필수!!
 >> text, email, password, number, tel, file 등등...
@@ -80,7 +78,7 @@
 
 - Script : HTML 내에서 CSS 작성할 때 사용 / Body태그의 가장 마/지막에 위치! 
 
-## CSS(Cascading Style Sheet)
+# CSS(Cascading Style Sheet)
 Document + Style
 ' ; ' CSS 한 문장 끝날 때마다 필수로 작성
 
@@ -102,10 +100,10 @@ selecter {
 <h5 style ="propertive"> 이렇게 사용하지 말아요 </h5> 
 ```
 
-## 속기형
+### 속기형
 - padding or margin : top right bottom left;
 
-## box
+## Box
 1. box type => box model 이 바뀐다.
 2. box type : block, inline요소
 - F12를 눌러 display를 검색해서 실제 사이트에서 각각의 요소가 어떤 요소인지 알수 있음 
@@ -140,13 +138,12 @@ selecter {
 <button></button> / <input type =""> / <select option="">
 ```
 
-### float
+### Float
 - Float -> 가로 배치
 - float를 적용하게 되면, 해당 요소의 신분이 상승
 - Inline
 - 다만 float로 block 신분 상승한 요소는 길막을 못함
-- 따로 width를 선언하지 않은 경우
-width = 부모 content-box의 100%
+- 따로 width를 선언하지 않은 경우, width = 부모 content-box의 100%
 
 ### Float, how to fix - 달달 방법
 - overflow : hidden; 사용
@@ -166,13 +163,13 @@ width = 부모 content-box의 100%
 }
 ```
 
-### position
+### Position
 - 요소를 원하는 위치에 자유롭게 이동할 수 있도록 사용
 - static, relative, absolute, fixed, sticky
 >(sticky의 경우 지원브라어저가 적다.)
 
-#### Postion-static
-- 모든 요소의 기본 요소는 static
+#### Position-static
+>- 모든 요소의 기본 요소는 static
 
 #### Position-relative
 >- 자기가 있던 요소를 기준으로 이동
@@ -180,10 +177,10 @@ width = 부모 content-box의 100%
 
 #### Position-absolute
 
-- 붕 떠서 찾을 길 없는 자식요쇼
-- 블록으로 신분상승
-- 자신이 원하는 요소를 기준으로 position을 변경 가능
-- position:absolute는 static이 아닌 것들을 기준으로 움직인다
+>- 붕 떠서 찾을 길 없는 자식요쇼
+>- 블록으로 신분상승
+>- 자신이 원하는 요소를 기준으로 position을 변경 가능
+>- position:absolute는 static이 아닌 것들을 기준으로 움직인다
 
 #### Position-fixed
 - absolute와 동일한 현상이 발생
@@ -228,3 +225,4 @@ width = 부모 content-box의 100%
   내용입력....
 }
 ```
+### Grid
