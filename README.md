@@ -349,7 +349,11 @@ if(age === 10) {
 - //=
 
 #### ...문법
-
+```js
+console.log(sum(nums[0],nums[1]));
+console.log(sum(...nums));
+console.log(...arr);
+```
 #### if문 
 ```js
 if(arr[0] === 60) {
