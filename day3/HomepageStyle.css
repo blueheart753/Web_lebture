@@ -44,7 +44,7 @@ body {
 
 .c { 
   grid-row: 1/2;
-  grid-column: 1/6;
+  grid-column: 1/7;
 }
 
 .d {
@@ -82,10 +82,31 @@ body {
 }
 
 @media screen and (max-width : 767px) {
-  .maincontainer {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 3fr;
-    height: 100%;
+ .content-wraper {
+  grid-template-rows: repeat(2,minmax(100px,auto));
+  grid-template-columns: 1fr;
+}
+
+.wrap-right {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    grid-template-rows:1fr;
+    grid-template-columns: repeat(2,minmax(100px,auto));
+  }
+
+  .wrap-left {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    
+  }
+  
+  .a {
+    grid-row: 1/2;
+    grid-column: 1/2  ;
+  }
+  
+  .b {
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 }
