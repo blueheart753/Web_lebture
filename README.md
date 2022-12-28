@@ -225,4 +225,69 @@ selecter {
   내용입력....
 }
 ```
+### Typography
+- font-size
+#### px
+>절대 단위
+#### em
+> 실제 적용된 폰트 사이즈(내가 font-size를 24px로 설정하고, width=20em 해주게 되면 width는 480px)
+
+#### Letter-spacing
+- 글자와 글자 사이 자간
+- px, em 중 현재 폰트 사이즈에 비례해서 변할 수 있도록 em 많이 사용
+
+#### font-weight
+- 두깨
+#### color 
+> 글자 색상
+>> #0066ff(Hex), #fff(RGB), #9a8f5e(0.005)(Alpa)
+
+#### text-decoration
+-  텍스트에 줄 넣는 속성
+
+#### webfont
+- 사용자의 컴퓨터에 CSS에 사용한 폰트가 없는 경우 Web에서 받아올 수 있음
+
 ### Grid
+- 페이지 전체를 설꼐할 때 디자인 적 방법론이 존재, 디자인을 할 때, 전체 화면을 특정 간경으로 쪼개서 비례적으로 설계를 함
+>- 격자무늬(grid)에 따라서 설계를 한다.
+>- grid system에 때라서 디자이너가 설계를 해주면, 우라도 맞춰서 구현을 해야한다. (grid 칸 수는 통상적으로 12)
+
+#### flex와 grid 차이점
+- Flex : 한 방향 레이아웃 시스템(1차원)
+- Grid : 가로, 세로 레이아웃 시스템(2차원)
+>- 정렬하고자 하는 요소가 자식으로 존재하는 부모 태그에게 display:grid 속성을 부여한다.
+>> 
+```css
+.parent {
+  display : grid;
+}
+
+.parent {
+  display : inline-grid;
+  /* Inline 방식의 grid */
+}
+```
+- 전체를 어떤 비율로 쪼갤지 먼저 생각하기
+>- gird-template-rows : 행
+>- gird-template-columns : 열
+>- fr : 숫자 비율대로 크기를 나눈다
+>- 1fr 1fr 1fr : 1:1:1 비율인 3개의 rows를 만듦
+
+### repeat
+- repeat(반복횟수ㅡ 반복값)
+
+
+- 최솟값, 최댓값을 지정할 수 있는 minmax 함수를 사용하여 해당공간의 최소 크기, 최대 크기를 지정 할 수 있다.
+- 보통 최소 높이 값을 설정하고, 안의 요소가 더 큰 경우 해당 요소의 높이에 따라 자동으로 늘어나는 auto 값을 사용하여 다음과 같이 CSS를 작성 할 수 있다.
+> 
+```css
+.parent {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(4,minmax(100px, auto));
+  grid-template-columns: repeat(4,minmax(100px,auto));
+}
+```
+
+- 부모 div를 어떤 비율로 나눌지 다 설계했다면, 이제 그 안에 들어가는 요소에게 영역을 지정해준다.
