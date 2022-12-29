@@ -13,5 +13,3 @@ function getWonPrice(priceList) {
 }
 const result = getWonPrice(price);
 console.log(result);
-
-
