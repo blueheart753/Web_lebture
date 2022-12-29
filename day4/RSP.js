@@ -3,6 +3,7 @@ const scissors = document.getElementById('scissors');
 const paper = document.getElementById('paper'); 
 const Result = document.getElementById('Result');
 const user = document.getElementById('UserPic');
+
 rock.addEventListener('click', () => {
   const Random = Math.floor(Math.random() * 3);
   const Rock = Math.floor(Math.random() * 3);
@@ -18,6 +19,7 @@ paper.addEventListener('click', () => {
   user.innerText = `보`;
   paper > Random ? Result.innerText = `승리` : paper == Random ? Result.innerText = `무승부` : Result.innerText = `패배`;
 })
+
 scissors.addEventListener('click', () => {
   const Random = Math.floor(Math.random() * 3);
   const scissors = Math.floor(Math.random() * 3);
