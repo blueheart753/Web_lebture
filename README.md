@@ -388,9 +388,9 @@ function getHelloCustomer(user) {
 - 배열인지 아닌지 구별 해주는 문법
 ##### Array.form()
 - 유사배열
-> 배열 행새를 하는 객체
+>- 배열 행새를 하는 객체
 - Array.form()
->> 해당 유사 배열을 새로운 배열로 만들어주는 문법
+>- 해당 유사 배열을 새로운 배열로 만들어주는 문법
 ```js
 const objLikeArr = {0:'hello',1:'javascript',length:2}; // <-- 유사 배열
 const converted = Array.from(objLikeArr);
