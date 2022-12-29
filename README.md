@@ -365,4 +365,80 @@ else {
   // 거짓일 때 실행;
 }
 ```
+- If문이 있다고 반드시 else가 필요하지 않다
+```js
+function getHelloCustomer(user) {
+  if(user.age < 20) {
+    report(user)
+  }else {
+    return '안녕하세요';
+  }
 
+  ============================================
+
+  if(user.age < 20) {
+    report(user)
+  }
+    return '안녕하세요';
+}
+```
+
+#### 배열
+##### Array.isArray()
+- 배열인지 아닌지 구별 해주는 문법
+##### Array.form()
+- 유사배열
+> 배열 행새를 하는 객체
+- Array.form()
+>> 해당 유사 배열을 새로운 배열로 만들어주는 문법
+```js
+const objLikeArr = {0:'hello',1:'javascript',length:2}; // <-- 유사 배열
+const converted = Array.from(objLikeArr);
+console.log(converted);
+```
+##### Array.prototype.find()
+-주어진 판별 함수를 만족하는 첫번째 요소의 인덱스를 반환, 요소가 없으면 undifind를 반환
+
+##### Arrays.prototype.map()
+- 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출 한 결과를 모아 새로운 배열을 반환함
+
+### Function(함수)
+- 재사용 할 수 있는 코드를 묶어 두는 것
+```js
+  function 함수이름(매개변수,...) {
+     수행할 코드;
+      ...;
+        ...;
+          ...;
+  }
+
+  함수이름(호출값,호출값2);
+```
+
+##### Arow function (화살표 함수)
+- 코드가 엄청나게 간결해진다.
+> 함수 내에 콜백함수로 건네줄 때 많이 사용
+```js
+  (매개변수) => {실행할 문장...}
+
+  const sum2 = function(a,b) {
+  return a+b;
+};
+
+===================================================
+
+const sum3 = (a,b) => a+b;
+```
+
+#### arrow function의 단점
+- 기본적으로 this 함수는 window 객체를 호출 / 자기 자신 참조 불가
+- arguments 사용불가 (찾을 수 없음)
+- 유사객체로 저장
+> Array form(argument) --> 새롭게 배열을 만듦
+
+#### Array.sort()
+- 배열을 오름차순 정렬시킨다
+```js
+배열이름.sort(a,b);
+```
+> a-b < 0 = (a,b) | a-b > 0 = (b,a) | a-b == 0 =(a,b)
