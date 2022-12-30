@@ -18,7 +18,6 @@ rock.addEventListener('click', () => {
   let Random = Math.floor(Math.random() * 4);
   const Rock = 0;
   user.innerText = `바위`;
-  console.log(Rock);
   console.log(Random)
   if(2 < Random) {
     Result.innerText = "패배";
@@ -52,10 +51,9 @@ paper.addEventListener('click', () => {
 scissors.addEventListener('click', () => {
   let Random = Math.floor(Math.random() * 4);
   const scissors = 2;
-  console.log(scissors);
   console.log(Random)
   user.innerText = `가위`;
-  if(Random === 2) {
+  if(Random === 0) {
     Result.innerText = "패배";
     AiPic.innerText = "바위";
   }else if(scissors === Random) {
