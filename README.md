@@ -442,3 +442,34 @@ const sum3 = (a,b) => a+b;
 배열이름.sort(a,b);
 ```
 > a-b < 0 = (a,b) | a-b > 0 = (b,a) | a-b == 0 =(a,b)
+
+### Then
+- 성공하거나 실패했을 때 무엇을 실행할지 정함
+```js
+name.then(성공);
+name.catch(실패);
+```
+
+### js에서 비동기 구현no
+- callback
+- Promise (ES6 표준 채택)
+- Async & Await (ES8)
+> 현재 작업을 비동기적으로 처리하고 있는 상황
+>>- 작업중 (pending) => 성공 및 실패 여부가 결정되지 않은, promise 객체가 실행중 
+>>- 작업완료 & 성공 => 작업 완료! 성공했다 ~+ 값 (reslove)
+>>- 작업완료 & 실패 => 작업 완료! 실패.... + 왜 실패 에러 객체 (reject)
+
+### fetch 사용법
+```js
+fetch("url")
+.then((rea)=> res.json())
+.then((data) => {
+  // data를 응답받은 후의 로직
+})
+.then(()=>{})
+.then(()=>{})
+.catch(error=>alert(error.massage))
+```
+
+## DOM
+- HTML문서에 직접 접근할 수 있는 것
