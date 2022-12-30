@@ -55,7 +55,7 @@ scissors.addEventListener('click', () => {
   console.log(scissors);
   console.log(Random)
   user.innerText = `가위`;
-  if(Random === 1) {
+  if(Random === 2) {
     Result.innerText = "패배";
     AiPic.innerText = "보";
   }else if(scissors === Random) {
