@@ -57,12 +57,12 @@ scissors.addEventListener('click', () => {
   user.innerText = `가위`;
   if(Random === 2) {
     Result.innerText = "패배";
-    AiPic.innerText = "보";
+    AiPic.innerText = "바위";
   }else if(scissors === Random) {
     Result.innerText = "무승부";
     AiPic.innerText = "가위";
   }else {
     Result.innerText = "승리";
-    AiPic.innerText = "바위";
+    AiPic.innerText = "보";
   }
 })
